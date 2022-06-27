@@ -5,13 +5,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import trapper.dev.spring_shopping_list.persist.ShoppingItem;
-import trapper.dev.spring_shopping_list.persist.ShoppingItemRepository;
+import trapper.dev.spring_shopping_list.models.ShoppingItem;
+import trapper.dev.spring_shopping_list.models.ShoppingItemRepository;
 
 @Controller
 public class ShoppingListController {
 
-    private ShoppingItemRepository repository;
+    private final ShoppingItemRepository repository;
 
     @Autowired
     public ShoppingListController(ShoppingItemRepository repository) {

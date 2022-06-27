@@ -1,9 +1,9 @@
-package trapper.dev.spring_shopping_list.persist;
+package trapper.dev.spring_shopping_list.models;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name="shopping items")
+@Table(name = "shopping_items")
 public class ShoppingItem {
 
     @Id
