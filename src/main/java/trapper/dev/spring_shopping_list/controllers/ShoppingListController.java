@@ -3,7 +3,9 @@ package trapper.dev.spring_shopping_list.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import trapper.dev.spring_shopping_list.models.ShoppingItem;
 import trapper.dev.spring_shopping_list.models.ShoppingItemRepository;
@@ -28,6 +30,12 @@ public class ShoppingListController {
     @PostMapping
     public String newShoppingItem(ShoppingItem shoppingItem){
         repository.save(shoppingItem);
+        return "redirect:/";
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteShoppingItem(@PathVariable("id") Long id){
+        repository.deleteById(id);
         return "redirect:/";
     }
 }
