@@ -1,5 +1,132 @@
-table {width: 100%; border-collapse: collapse;}
-table td {padding: 12px 16px;}
-table thead tr {font-weight: bold; border-top: 1px solid #e8e9eb;}
-table tr {border-bottom: 1px solid #e8e9eb;}
-table tbody tr:hover {background: #e8f6ff;}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{
+    background-color: antiquewhite;
+}
+
+.h1_header{
+    font-size: 30px;
+    font-weight: 700;
+
+    background-color: wheat;
+    border: 2px solid black;
+
+    color: darkgray;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+
+    padding: 20px 50px;
+    margin: 0px 0px 40px;
+}
+
+.input_form{
+    margin: 0px 0px 40px 40px;
+}
+
+.button_add:hover{
+    background-color: olive;
+}
+
+.input_and_submit{
+    display: inline-flex;
+    width: auto;
+    max-width: 100%;
+}
+
+.input_and_submit input,
+.input_and_submit button{
+    display: block;
+    padding: 8px 10px;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.input_and_submit input{
+    border: 2px solid #ccc;
+    border-right: 0;
+    border-radius: 6px 0 0 6px;
+}
+
+.input_and_submit button{
+    border: 2px solid #ccc;
+    border-radius: 0 6px 6px 0;
+    background: #00cfae;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #dddddd;
+    border-collapse: collapse;
+}
+th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 2px solid #dddddd;
+}
+td {
+    border: 2px solid #dddddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.header_columns_table{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.button_delete{
+    background-color: white;
+    border: 1px solid darksalmon;
+    border-radius: 20px;
+
+    font-size: 15px;
+    font-weight: 800;
+    padding: 5px 10px;
+}
+.button_delete:hover{
+    background-color: red;
+}
